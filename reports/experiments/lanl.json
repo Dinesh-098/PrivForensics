@@ -1,0 +1,3072 @@
+{
+  "seed": 42,
+  "split_boundary_days": [
+    12,
+    13
+  ],
+  "splits": {
+    "train": {
+      "rows": 13996,
+      "known_positives": 316
+    },
+    "validation": {
+      "rows": 1407,
+      "known_positives": 207
+    },
+    "test": {
+      "rows": 19739,
+      "known_positives": 177
+    }
+  },
+  "archive_sha256": "9c6b0cc261b0edd19324f6fd1839743224938a7f644ed202ca70bd70a89bf672",
+  "models": [
+    {
+      "model": "Random Forest",
+      "observed_label_average_precision": 0.20200327809992247,
+      "observed_positive_recall": 0.2542372881355932,
+      "unlabelled_flag_rate": 0.013853389224005726,
+      "validation_95th_percentile_threshold": 0.9294502734050372,
+      "top_feature_importance": {
+        "category__authentication_type_NTLM": 0.4615382682304737,
+        "category__authentication_type_nan": 0.14722088768181216,
+        "category__authentication_type_Kerberos": 0.13153703997234106,
+        "category__orientation_LogOn": 0.11810013607929297,
+        "category__orientation_LogOff": 0.04796042669768477,
+        "hour__hour_in_day": 0.041300463668943486,
+        "category__logon_type_Network": 0.030142469170802967,
+        "category__logon_type_nan": 0.008931699392884709
+      },
+      "performance": {
+        "seconds": 0.2031,
+        "cpu_seconds": 0.2931,
+        "mean_process_cpu_percent": 144.33,
+        "rss_start_bytes": 577028096,
+        "rss_end_bytes": 583467008
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "observed_label_average_precision": 0.030711984710052438,
+      "observed_positive_recall": 0.0,
+      "unlabelled_flag_rate": 0.06185461609242409,
+      "validation_95th_percentile_threshold": 0.5249308922633074,
+      "top_feature_importance": {},
+      "performance": {
+        "seconds": 0.1046,
+        "cpu_seconds": 0.1634,
+        "mean_process_cpu_percent": 156.13,
+        "rss_start_bytes": 584581120,
+        "rss_end_bytes": 586678272
+      }
+    }
+  ],
+  "findings": [
+    {
+      "model": "Random Forest",
+      "source_line": 236686566,
+      "timestamp_s": 1195453,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236700938,
+      "timestamp_s": 1195516,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236735884,
+      "timestamp_s": 1195668,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236750424,
+      "timestamp_s": 1195738,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236752447,
+      "timestamp_s": 1195747,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236754217,
+      "timestamp_s": 1195757,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236762879,
+      "timestamp_s": 1195800,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236780582,
+      "timestamp_s": 1195886,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236799633,
+      "timestamp_s": 1195980,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 236816330,
+      "timestamp_s": 1196061,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 257736906,
+      "timestamp_s": 1285080,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 257746814,
+      "timestamp_s": 1285147,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 257748765,
+      "timestamp_s": 1285162,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386568062,
+      "timestamp_s": 1973903,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386581206,
+      "timestamp_s": 1973987,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386582843,
+      "timestamp_s": 1973998,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386617911,
+      "timestamp_s": 1974203,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386628550,
+      "timestamp_s": 1974270,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386696100,
+      "timestamp_s": 1974690,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386708587,
+      "timestamp_s": 1974762,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386761000,
+      "timestamp_s": 1975077,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 386774169,
+      "timestamp_s": 1975157,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449144764,
+      "timestamp_s": 2320640,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449150894,
+      "timestamp_s": 2320678,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449154721,
+      "timestamp_s": 2320703,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449199803,
+      "timestamp_s": 2320957,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449250028,
+      "timestamp_s": 2321247,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449286689,
+      "timestamp_s": 2321457,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449298662,
+      "timestamp_s": 2321528,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449327269,
+      "timestamp_s": 2321688,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 449330091,
+      "timestamp_s": 2321702,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487492600,
+      "timestamp_s": 2492504,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487515708,
+      "timestamp_s": 2492626,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487530506,
+      "timestamp_s": 2492716,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487584057,
+      "timestamp_s": 2493016,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487596673,
+      "timestamp_s": 2493086,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487617943,
+      "timestamp_s": 2493209,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487653809,
+      "timestamp_s": 2493409,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487654516,
+      "timestamp_s": 2493413,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487685996,
+      "timestamp_s": 2493595,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 487723337,
+      "timestamp_s": 2493802,
+      "risk_score": 0.9406575991302225,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232338391,
+      "timestamp_s": 1177633,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232344312,
+      "timestamp_s": 1177653,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232445937,
+      "timestamp_s": 1177987,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232475267,
+      "timestamp_s": 1178086,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232494869,
+      "timestamp_s": 1178149,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232519943,
+      "timestamp_s": 1178234,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232529742,
+      "timestamp_s": 1178267,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232568373,
+      "timestamp_s": 1178388,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232687859,
+      "timestamp_s": 1178788,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232737358,
+      "timestamp_s": 1178955,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232785204,
+      "timestamp_s": 1179107,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232789788,
+      "timestamp_s": 1179121,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232825022,
+      "timestamp_s": 1179228,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232879791,
+      "timestamp_s": 1179410,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232924224,
+      "timestamp_s": 1179553,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232935073,
+      "timestamp_s": 1179589,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232946566,
+      "timestamp_s": 1179625,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 232962017,
+      "timestamp_s": 1179675,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 233054470,
+      "timestamp_s": 1179969,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 233096719,
+      "timestamp_s": 1180104,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 233223675,
+      "timestamp_s": 1180503,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 233261593,
+      "timestamp_s": 1180621,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 233270687,
+      "timestamp_s": 1180649,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 233295480,
+      "timestamp_s": 1180726,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271645218,
+      "timestamp_s": 1350010,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271653346,
+      "timestamp_s": 1350041,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271657429,
+      "timestamp_s": 1350057,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271676839,
+      "timestamp_s": 1350128,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271705062,
+      "timestamp_s": 1350232,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271726124,
+      "timestamp_s": 1350304,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271731674,
+      "timestamp_s": 1350323,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271769168,
+      "timestamp_s": 1350454,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271770407,
+      "timestamp_s": 1350460,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271780625,
+      "timestamp_s": 1350497,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271787238,
+      "timestamp_s": 1350521,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 271811599,
+      "timestamp_s": 1350613,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 272093159,
+      "timestamp_s": 1351641,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 272098152,
+      "timestamp_s": 1351661,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 272147481,
+      "timestamp_s": 1351845,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 272219817,
+      "timestamp_s": 1352110,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "known red team",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289099409,
+      "timestamp_s": 1438635,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289124013,
+      "timestamp_s": 1438762,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289184676,
+      "timestamp_s": 1439050,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289211660,
+      "timestamp_s": 1439181,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289244692,
+      "timestamp_s": 1439348,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289292756,
+      "timestamp_s": 1439588,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289293844,
+      "timestamp_s": 1439593,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289332487,
+      "timestamp_s": 1439785,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 289332996,
+      "timestamp_s": 1439787,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383128497,
+      "timestamp_s": 1957141,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383146169,
+      "timestamp_s": 1957208,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383176838,
+      "timestamp_s": 1957330,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383184515,
+      "timestamp_s": 1957361,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383192042,
+      "timestamp_s": 1957394,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383216492,
+      "timestamp_s": 1957488,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383219049,
+      "timestamp_s": 1957499,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383232001,
+      "timestamp_s": 1957550,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383234248,
+      "timestamp_s": 1957559,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "source_line": 383265459,
+      "timestamp_s": 1957684,
+      "risk_score": 0.9392428669484842,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 306482134,
+      "timestamp_s": 1549842,
+      "risk_score": 0.7618394245852956,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 386561348,
+      "timestamp_s": 1973866,
+      "risk_score": 0.7437272178468135,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 449351857,
+      "timestamp_s": 2321836,
+      "risk_score": 0.7437272178468135,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 386606551,
+      "timestamp_s": 1974136,
+      "risk_score": 0.7408064409162692,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Interactive",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 344845003,
+      "timestamp_s": 1779905,
+      "risk_score": 0.7406021458940377,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "14"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 463243087,
+      "timestamp_s": 2384199,
+      "risk_score": 0.7406021458940377,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "14"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 233397917,
+      "timestamp_s": 1181067,
+      "risk_score": 0.7404301725882542,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Unlock",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 400636800,
+      "timestamp_s": 2045332,
+      "risk_score": 0.7404301725882542,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Unlock",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 484202042,
+      "timestamp_s": 2476920,
+      "risk_score": 0.7404301725882542,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Unlock",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 337699650,
+      "timestamp_s": 1753858,
+      "risk_score": 0.739385138874146,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Interactive",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "7"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 383342611,
+      "timestamp_s": 1957987,
+      "risk_score": 0.7391431967229712,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 330906346,
+      "timestamp_s": 1709663,
+      "risk_score": 0.7389693631844597,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "18"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 442450067,
+      "timestamp_s": 2292439,
+      "risk_score": 0.738730124288078,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "12"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 303163300,
+      "timestamp_s": 1528385,
+      "risk_score": 0.737906006058231,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 452860959,
+      "timestamp_s": 2341201,
+      "risk_score": 0.7361018583999487,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "2"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 452958497,
+      "timestamp_s": 2341756,
+      "risk_score": 0.7361018583999487,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "2"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 299721367,
+      "timestamp_s": 1506850,
+      "risk_score": 0.7325545435250563,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "10"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 268252340,
+      "timestamp_s": 1337540,
+      "risk_score": 0.7315649047863568,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "11"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 268281798,
+      "timestamp_s": 1337647,
+      "risk_score": 0.7315649047863568,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "11"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 397032561,
+      "timestamp_s": 2029381,
+      "risk_score": 0.7315649047863568,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "11"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 501638262,
+      "timestamp_s": 2556846,
+      "risk_score": 0.7297264147886667,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Unlock",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "14"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 498075996,
+      "timestamp_s": 2543737,
+      "risk_score": 0.7292002301142041,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Unlock",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "10"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 268279039,
+      "timestamp_s": 1337637,
+      "risk_score": 0.7283234757946693,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Unlock",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "11"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 358776354,
+      "timestamp_s": 1848352,
+      "risk_score": 0.7189338246646936,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "9"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 376081361,
+      "timestamp_s": 1930011,
+      "risk_score": 0.7184181709807389,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "MICROSOFT_AUTHENTICATION_PACKAGE_V1_0",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "8"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 236824643,
+      "timestamp_s": 1196102,
+      "risk_score": 0.7182206237238525,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 320619037,
+      "timestamp_s": 1642214,
+      "risk_score": 0.7170365255751298,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "0"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 257859073,
+      "timestamp_s": 1285786,
+      "risk_score": 0.7152742170377999,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 257893233,
+      "timestamp_s": 1285961,
+      "risk_score": 0.7152742170377999,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 292502686,
+      "timestamp_s": 1459612,
+      "risk_score": 0.7152742170377999,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 295914016,
+      "timestamp_s": 1482105,
+      "risk_score": 0.7142972446314505,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "3"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 296052176,
+      "timestamp_s": 1483093,
+      "risk_score": 0.7142972446314505,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "3"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 487636584,
+      "timestamp_s": 2493317,
+      "risk_score": 0.710930147135899,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 282183287,
+      "timestamp_s": 1407075,
+      "risk_score": 0.7102898744910159,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "6"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 323829352,
+      "timestamp_s": 1663951,
+      "risk_score": 0.7102898744910159,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "6"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 390175174,
+      "timestamp_s": 1995074,
+      "risk_score": 0.7098742837355182,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "2"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 219361398,
+      "timestamp_s": 1126786,
+      "risk_score": 0.7077435558728277,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "0"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 383244561,
+      "timestamp_s": 1957602,
+      "risk_score": 0.7074447709400054,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "15"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 466737484,
+      "timestamp_s": 2397588,
+      "risk_score": 0.7056168199100115,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "17"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 365832652,
+      "timestamp_s": 1874170,
+      "risk_score": 0.7046738257164316,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 400658723,
+      "timestamp_s": 2045445,
+      "risk_score": 0.7046738257164316,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 397197529,
+      "timestamp_s": 2030143,
+      "risk_score": 0.7046044589558893,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "11"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 320427636,
+      "timestamp_s": 1640977,
+      "risk_score": 0.7040442215410385,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "23"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 278758798,
+      "timestamp_s": 1386865,
+      "risk_score": 0.7039723116678289,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "1"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 334294336,
+      "timestamp_s": 1732285,
+      "risk_score": 0.7039723116678289,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "1"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 334355833,
+      "timestamp_s": 1732691,
+      "risk_score": 0.7039723116678289,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "1"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 334371609,
+      "timestamp_s": 1732792,
+      "risk_score": 0.7039723116678289,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "1"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 334472538,
+      "timestamp_s": 1733489,
+      "risk_score": 0.7039723116678289,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "1"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 491072018,
+      "timestamp_s": 2512235,
+      "risk_score": 0.7039723116678289,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "1"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 411108135,
+      "timestamp_s": 2109647,
+      "risk_score": 0.7022665244250894,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "10"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 365873170,
+      "timestamp_s": 1874338,
+      "risk_score": 0.7018943468162491,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 299604571,
+      "timestamp_s": 1506087,
+      "risk_score": 0.7011755707191115,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "10"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 299708083,
+      "timestamp_s": 1506767,
+      "risk_score": 0.7011755707191115,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "10"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 431936668,
+      "timestamp_s": 2240951,
+      "risk_score": 0.7002692178163442,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 431990851,
+      "timestamp_s": 2241317,
+      "risk_score": 0.7002692178163442,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 432069089,
+      "timestamp_s": 2241815,
+      "risk_score": 0.7002692178163442,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 432076620,
+      "timestamp_s": 2241861,
+      "risk_score": 0.7002692178163442,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 470079457,
+      "timestamp_s": 2415240,
+      "risk_score": 0.7002692178163442,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 470112210,
+      "timestamp_s": 2415428,
+      "risk_score": 0.7002692178163442,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 337899484,
+      "timestamp_s": 1754630,
+      "risk_score": 0.6987325999710107,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "7"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 456261320,
+      "timestamp_s": 2359054,
+      "risk_score": 0.6987325999710107,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "7"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 494620224,
+      "timestamp_s": 2531289,
+      "risk_score": 0.6987325999710107,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "7"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 292517409,
+      "timestamp_s": 1459715,
+      "risk_score": 0.6976480080828037,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 404048284,
+      "timestamp_s": 2065354,
+      "risk_score": 0.6976480080828037,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 404129044,
+      "timestamp_s": 2065875,
+      "risk_score": 0.6976480080828037,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 404146841,
+      "timestamp_s": 2065992,
+      "risk_score": 0.6976480080828037,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 404148368,
+      "timestamp_s": 2066001,
+      "risk_score": 0.6976480080828037,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 417922224,
+      "timestamp_s": 2151936,
+      "risk_score": 0.6976480080828037,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 351765021,
+      "timestamp_s": 1813501,
+      "risk_score": 0.6966378437833083,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "23"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 386598151,
+      "timestamp_s": 1974085,
+      "risk_score": 0.6960582124129292,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 386627371,
+      "timestamp_s": 1974262,
+      "risk_score": 0.6960582124129292,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 487519728,
+      "timestamp_s": 2492649,
+      "risk_score": 0.6960582124129292,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 487694742,
+      "timestamp_s": 2493644,
+      "risk_score": 0.6960582124129292,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 226301390,
+      "timestamp_s": 1157901,
+      "risk_score": 0.6953118857540088,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "9"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 306386391,
+      "timestamp_s": 1549208,
+      "risk_score": 0.6941280551031419,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 261121065,
+      "timestamp_s": 1304821,
+      "risk_score": 0.6940909460161375,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "2"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 376232900,
+      "timestamp_s": 1930591,
+      "risk_score": 0.6936859811679777,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "NTLM",
+        "logon_type": "Network",
+        "orientation": "LogOn",
+        "result": "Fail",
+        "hour_in_day": "8"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 310038386,
+      "timestamp_s": 1572687,
+      "risk_score": 0.6932810300723315,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "4"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 435347746,
+      "timestamp_s": 2263376,
+      "risk_score": 0.6932810300723315,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "4"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 292645029,
+      "timestamp_s": 1460588,
+      "risk_score": 0.6924598880280803,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "21"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 222758597,
+      "timestamp_s": 1144729,
+      "risk_score": 0.6922747133521269,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "5"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 243709365,
+      "timestamp_s": 1230457,
+      "risk_score": 0.6922747133521269,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "5"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 310166589,
+      "timestamp_s": 1573521,
+      "risk_score": 0.6922747133521269,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "5"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 337843757,
+      "timestamp_s": 1754412,
+      "risk_score": 0.6919827003838361,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGS",
+        "result": "Fail",
+        "hour_in_day": "7"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 295964287,
+      "timestamp_s": 1482484,
+      "risk_score": 0.6911989917735802,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "3"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 236685205,
+      "timestamp_s": 1195447,
+      "risk_score": 0.6875075368314674,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 236752701,
+      "timestamp_s": 1195748,
+      "risk_score": 0.6875075368314674,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 449219425,
+      "timestamp_s": 2321077,
+      "risk_score": 0.6875075368314674,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "20"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 275152751,
+      "timestamp_s": 1365886,
+      "risk_score": 0.6866809117458783,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "19"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 330912647,
+      "timestamp_s": 1709709,
+      "risk_score": 0.6866809117458783,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "18"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 331054409,
+      "timestamp_s": 1710644,
+      "risk_score": 0.6866809117458783,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "19"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 222831919,
+      "timestamp_s": 1145095,
+      "risk_score": 0.6863223085587334,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "6"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 222887342,
+      "timestamp_s": 1145346,
+      "risk_score": 0.6863223085587334,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "6"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 324035820,
+      "timestamp_s": 1665334,
+      "risk_score": 0.6863223085587334,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "6"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 324043428,
+      "timestamp_s": 1665385,
+      "risk_score": 0.6863223085587334,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "6"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 348333194,
+      "timestamp_s": 1794129,
+      "risk_score": 0.6852920145269152,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "18"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 348360214,
+      "timestamp_s": 1794283,
+      "risk_score": 0.6852920145269152,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "nan",
+        "logon_type": "nan",
+        "orientation": "TGT",
+        "result": "Fail",
+        "hour_in_day": "18"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 306556885,
+      "timestamp_s": 1550331,
+      "risk_score": 0.6852894947143349,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "NewCredentials",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "22"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 303135995,
+      "timestamp_s": 1528200,
+      "risk_score": 0.684931284882719,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "16"
+      }
+    },
+    {
+      "model": "Isolation Forest",
+      "source_line": 445836203,
+      "timestamp_s": 2304547,
+      "risk_score": 0.684931284882719,
+      "flagged": true,
+      "ground_truth": "unlabelled",
+      "evidence_summary": {
+        "authentication_type": "Negotiate",
+        "logon_type": "Batch",
+        "orientation": "LogOn",
+        "result": "Success",
+        "hour_in_day": "16"
+      }
+    }
+  ],
+  "cohort_performance": {
+    "seconds": 2.3996,
+    "cpu_seconds": 5.106,
+    "mean_process_cpu_percent": 212.79,
+    "rss_start_bytes": 450871296,
+    "rss_end_bytes": 576356352
+  }
+}

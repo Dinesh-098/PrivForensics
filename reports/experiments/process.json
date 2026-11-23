@@ -1,0 +1,414 @@
+{
+  "training_rows": 5880,
+  "test_rows": 1960,
+  "performance": {
+    "seconds": 0.162,
+    "cpu_seconds": 0.2321,
+    "mean_process_cpu_percent": 143.29,
+    "rss_start_bytes": 595427328,
+    "rss_end_bytes": 604340224
+  },
+  "archive_sha256": "af82f47ebf3ffc6dc392a01f890caa6157a5c7581a2cf0b1821801347f293ae4",
+  "findings": [
+    {
+      "source_line": 426000897,
+      "timestamp_s": 5010419,
+      "risk_score": 0.728837775222471,
+      "action": "End",
+      "training_sample_frequency": 1,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426042869,
+      "timestamp_s": 5011155,
+      "risk_score": 0.728837775222471,
+      "action": "End",
+      "training_sample_frequency": 1,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425954634,
+      "timestamp_s": 5009623,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425962457,
+      "timestamp_s": 5009751,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425964354,
+      "timestamp_s": 5009782,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425967619,
+      "timestamp_s": 5009841,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426007766,
+      "timestamp_s": 5010536,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426016083,
+      "timestamp_s": 5010676,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426017397,
+      "timestamp_s": 5010704,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426020398,
+      "timestamp_s": 5010757,
+      "risk_score": 0.6967328109379806,
+      "action": "End",
+      "training_sample_frequency": 1129,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425989500,
+      "timestamp_s": 5010220,
+      "risk_score": 0.6912419525326515,
+      "action": "Start",
+      "training_sample_frequency": 0,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425977114,
+      "timestamp_s": 5010005,
+      "risk_score": 0.6886871284881582,
+      "action": "End",
+      "training_sample_frequency": 6,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 410402008,
+      "timestamp_s": 4854009,
+      "risk_score": 0.6879507658223966,
+      "action": "End",
+      "training_sample_frequency": 1,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425968975,
+      "timestamp_s": 5009868,
+      "risk_score": 0.679937716961465,
+      "action": "End",
+      "training_sample_frequency": 15,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426037956,
+      "timestamp_s": 5011071,
+      "risk_score": 0.6793629143674603,
+      "action": "End",
+      "training_sample_frequency": 16,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425965562,
+      "timestamp_s": 5009806,
+      "risk_score": 0.6781296834066519,
+      "action": "End",
+      "training_sample_frequency": 21,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425971956,
+      "timestamp_s": 5009917,
+      "risk_score": 0.6781296834066519,
+      "action": "End",
+      "training_sample_frequency": 21,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426001815,
+      "timestamp_s": 5010428,
+      "risk_score": 0.6778070468473784,
+      "action": "Start",
+      "training_sample_frequency": 2,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425952839,
+      "timestamp_s": 5009596,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425956910,
+      "timestamp_s": 5009652,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425967569,
+      "timestamp_s": 5009840,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425986251,
+      "timestamp_s": 5010165,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425994063,
+      "timestamp_s": 5010300,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426016407,
+      "timestamp_s": 5010683,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426021284,
+      "timestamp_s": 5010777,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426023811,
+      "timestamp_s": 5010821,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426024776,
+      "timestamp_s": 5010839,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426025822,
+      "timestamp_s": 5010851,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426036845,
+      "timestamp_s": 5011048,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426043490,
+      "timestamp_s": 5011168,
+      "risk_score": 0.6774698328053254,
+      "action": "End",
+      "training_sample_frequency": 575,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425999341,
+      "timestamp_s": 5010386,
+      "risk_score": 0.6765775816847769,
+      "action": "End",
+      "training_sample_frequency": 294,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426017149,
+      "timestamp_s": 5010698,
+      "risk_score": 0.6765775816847769,
+      "action": "End",
+      "training_sample_frequency": 294,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426039935,
+      "timestamp_s": 5011105,
+      "risk_score": 0.6765775816847769,
+      "action": "End",
+      "training_sample_frequency": 294,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425971264,
+      "timestamp_s": 5009904,
+      "risk_score": 0.6762926833594904,
+      "action": "End",
+      "training_sample_frequency": 20,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425955806,
+      "timestamp_s": 5009640,
+      "risk_score": 0.6754694438342329,
+      "action": "End",
+      "training_sample_frequency": 90,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425960293,
+      "timestamp_s": 5009708,
+      "risk_score": 0.674446162610352,
+      "action": "End",
+      "training_sample_frequency": 72,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425964861,
+      "timestamp_s": 5009791,
+      "risk_score": 0.6729505612120716,
+      "action": "End",
+      "training_sample_frequency": 219,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425990818,
+      "timestamp_s": 5010242,
+      "risk_score": 0.6727860409925394,
+      "action": "End",
+      "training_sample_frequency": 108,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425957037,
+      "timestamp_s": 5009655,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425958086,
+      "timestamp_s": 5009675,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425963197,
+      "timestamp_s": 5009762,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425972335,
+      "timestamp_s": 5009925,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 425978359,
+      "timestamp_s": 5010027,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426015484,
+      "timestamp_s": 5010665,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 426025768,
+      "timestamp_s": 5010849,
+      "risk_score": 0.6719326589385547,
+      "action": "End",
+      "training_sample_frequency": 165,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 363363985,
+      "timestamp_s": 4344152,
+      "risk_score": 0.6715666394407002,
+      "action": "End",
+      "training_sample_frequency": 0,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 363434428,
+      "timestamp_s": 4344302,
+      "risk_score": 0.6715666394407002,
+      "action": "End",
+      "training_sample_frequency": 1,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 363486419,
+      "timestamp_s": 4344409,
+      "risk_score": 0.6715666394407002,
+      "action": "End",
+      "training_sample_frequency": 0,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 363488856,
+      "timestamp_s": 4344414,
+      "risk_score": 0.6715666394407002,
+      "action": "End",
+      "training_sample_frequency": 1,
+      "ground_truth": "unlabelled"
+    },
+    {
+      "source_line": 363528844,
+      "timestamp_s": 4344496,
+      "risk_score": 0.6715666394407002,
+      "action": "End",
+      "training_sample_frequency": 0,
+      "ground_truth": "unlabelled"
+    }
+  ]
+}

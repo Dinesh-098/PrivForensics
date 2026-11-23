@@ -1,0 +1,120 @@
+{
+  "browser": "157.0.8103.79",
+  "measured": {
+    "design-system": {
+      "firstViewMs": 538,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 3907,
+      "browserErrors": []
+    },
+    "overview": {
+      "firstViewMs": 403,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 3907,
+      "browserErrors": []
+    },
+    "investigations": {
+      "firstViewMs": 476,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 3928,
+      "browserErrors": []
+    },
+    "evidence": {
+      "firstViewMs": 425,
+      "budgetKiB": 3072,
+      "axe": [
+        {
+          "id": "presentation-role-conflict",
+          "impact": "minor",
+          "selectors": [
+            ".st-emotion-cache-o6s72l"
+          ]
+        }
+      ],
+      "loadedJsKiB": 3978,
+      "browserErrors": []
+    },
+    "datasets": {
+      "firstViewMs": 478,
+      "budgetKiB": 4096,
+      "axe": [],
+      "loadedJsKiB": 4794,
+      "browserErrors": []
+    },
+    "correlation": {
+      "firstViewMs": 519,
+      "budgetKiB": 4096,
+      "axe": [],
+      "loadedJsKiB": 4801,
+      "browserErrors": []
+    },
+    "privacy-assessment": {
+      "firstViewMs": 407,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 3925,
+      "browserErrors": []
+    },
+    "protection": {
+      "firstViewMs": 381,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 2243,
+      "browserErrors": []
+    },
+    "analysis": {
+      "firstViewMs": 419,
+      "budgetKiB": 4096,
+      "axe": [],
+      "loadedJsKiB": 4783,
+      "browserErrors": []
+    },
+    "evaluation": {
+      "firstViewMs": 376,
+      "budgetKiB": 4096,
+      "axe": [],
+      "loadedJsKiB": 4768,
+      "browserErrors": []
+    },
+    "privacy-diagnostics": {
+      "firstViewMs": 420,
+      "budgetKiB": 4096,
+      "axe": [],
+      "loadedJsKiB": 4748,
+      "browserErrors": []
+    },
+    "performance": {
+      "firstViewMs": 401,
+      "budgetKiB": 4096,
+      "axe": [],
+      "loadedJsKiB": 4748,
+      "browserErrors": []
+    },
+    "reports": {
+      "firstViewMs": 369,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 3909,
+      "browserErrors": []
+    },
+    "audit": {
+      "firstViewMs": 409,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 4154,
+      "browserErrors": []
+    },
+    "settings": {
+      "firstViewMs": 892,
+      "budgetKiB": 3072,
+      "axe": [],
+      "loadedJsKiB": 2243,
+      "browserErrors": []
+    }
+  },
+  "highImpactViolations": [],
+  "offOrigin": []
+}

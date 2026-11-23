@@ -1,0 +1,42 @@
+# Local evidence, case state, and derived files
+/.privforensics/
+/dataset/lanl/
+/dataset/processed/
+/models/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.parquet
+*.joblib
+*.pickle
+*.pkl
+*.log
+
+# Local credentials
+.env
+.env.*
+!.env.example
+secrets.toml
+*.pem
+*.key
+
+# Local environments and development caches
+/venv/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+node_modules/
+.DS_Store
+
+# Local verification captures
+/docs/design/baseline/
+/docs/design/screenshots/*
+!/docs/design/screenshots/browser-verification.json

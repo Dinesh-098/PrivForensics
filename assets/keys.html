@@ -1,0 +1,66 @@
+<script>
+(() => {
+  if (window.pfKeysBound) return;
+  window.pfKeysBound = true;
+  let prefixAt = 0;
+  const keys = { o: "Overview", i: "Investigations", e: "Evidence", a: "AI analysis",
+    p: "Privacy protection", l: "Evaluation Lab", r: "Reports" };
+  const open = (name) => document.querySelector(".st-key-" + name + " button")?.click();
+  const search = () => {
+    const area = document.querySelector(".st-key-command_center");
+    if (!area || area.querySelector("button")?.disabled) return;
+    const input = document.querySelector(".st-key-command_query input");
+    if (input) { input.focus(); return; }
+    open("command_center");
+    let attempts = 0;
+    function focus() {
+      const field = document.querySelector(".st-key-command_query input");
+      if (field) field.focus();
+      else if (++attempts < 30) requestAnimationFrame(focus);
+    }
+    requestAnimationFrame(focus);
+  };
+  const labelBrush = () => {
+    document.querySelectorAll(".window_brush_bg, .window_brush").forEach(element => {
+      // Vega's pointer brush duplicates the labelled native range slider.
+      element.removeAttribute("role");
+      element.removeAttribute("aria-roledescription");
+      if (!element.hasAttribute("aria-hidden")) element.setAttribute("aria-hidden", "true");
+    });
+  };
+  let labelPending = false;
+  new MutationObserver(() => {
+    if (!labelPending) {
+      labelPending = true;
+      requestAnimationFrame(() => { labelPending = false; labelBrush(); });
+    }
+  }).observe(document.body, { subtree: true, childList: true });
+  labelBrush();
+  document.addEventListener("keydown", (event) => {
+    const textEntry = event.target instanceof Element &&
+      event.target.closest("input,textarea,select,[contenteditable],[role='combobox']");
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+      event.preventDefault();
+      search();
+      return;
+    }
+    if (textEntry || event.defaultPrevented || event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
+    const key = event.key.toLowerCase();
+    if (key === "/") { event.preventDefault(); search(); }
+    else if (key === "?") { event.preventDefault(); open("shortcut_center"); }
+    else if (key === "g") { prefixAt = performance.now(); }
+    else if (keys[key] && prefixAt && performance.now() - prefixAt < 850) {
+      const item = [...document.querySelectorAll(".st-key-nav_primary label")]
+        .find((label) => label.textContent.trim() === keys[key]);
+      prefixAt = 0;
+      if (item) { event.preventDefault(); item.click(); }
+    } else if (["j", "k"].includes(key) && event.target instanceof Element &&
+               event.target.closest('[data-testid="stDataFrame"]')) {
+      event.preventDefault();
+      event.target.dispatchEvent(new KeyboardEvent("keydown", {
+        key: key === "j" ? "ArrowDown" : "ArrowUp", bubbles: true, cancelable: true
+      }));
+    }
+  }, true);
+})();
+</script>

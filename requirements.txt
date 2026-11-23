@@ -1,0 +1,16 @@
+altair==6.3.0
+joblib==1.6.0
+numpy==2.5.5
+opacus==1.6.0
+pandas==3.1.1
+presidio-analyzer==2.2.359
+presidio-anonymizer==2.2.363
+psutil==7.2.2
+pyarrow==26.0.1
+pytest==9.2.0
+reportlab==4.4.9
+scikit-learn==1.9.1
+spacy==3.8.18
+streamlit==1.67.0
+tldextract==5.4.0
+torch==2.15.0

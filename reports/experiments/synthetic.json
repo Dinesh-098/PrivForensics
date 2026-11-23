@@ -1,0 +1,193 @@
+{
+  "seed": 42,
+  "epochs": 8,
+  "training_rows": 6000,
+  "test_rows": 2000,
+  "membership_nonmembers": 2000,
+  "privacy_unit": "one training row",
+  "secure_rng": false,
+  "label_definition": "Rules from dataset/generate_dataset.py",
+  "models": [
+    {
+      "model": "Baseline MLP",
+      "epsilon_target": null,
+      "epsilon_spent": null,
+      "delta": null,
+      "noise_multiplier": null,
+      "utility": {
+        "accuracy": 0.9545,
+        "precision": 0.9561042524005487,
+        "recall": 0.921957671957672,
+        "false_positive_rate": 0.02572347266881029,
+        "false_negative_rate": 0.07804232804232802,
+        "advantage": 0.8962341992888617,
+        "f1": 0.9387205387205387,
+        "roc_auc": 0.9790539563449532
+      },
+      "membership": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0,
+        "advantage": 0.0,
+        "threshold": 0.0004687687032856047,
+        "held_out_queries": 2000,
+        "roc_auc": 0.499836
+      },
+      "performance": {
+        "seconds": 0.1436,
+        "cpu_seconds": 0.1216,
+        "mean_process_cpu_percent": 84.69,
+        "rss_start_bytes": 452624384,
+        "rss_end_bytes": 457588736
+      }
+    },
+    {
+      "model": "DP-SGD target 4",
+      "epsilon_target": 4.0,
+      "epsilon_spent": 3.999195865525205,
+      "delta": 1e-05,
+      "noise_multiplier": 1.046142578125,
+      "utility": {
+        "accuracy": 0.844,
+        "precision": 0.9172932330827067,
+        "recall": 0.6455026455026455,
+        "false_positive_rate": 0.03536977491961415,
+        "false_negative_rate": 0.35449735449735453,
+        "advantage": 0.6101328705830313,
+        "f1": 0.7577639751552795,
+        "roc_auc": 0.9407260671328196
+      },
+      "membership": {
+        "accuracy": 0.4985,
+        "precision": 0.4991896272285251,
+        "recall": 0.924,
+        "false_positive_rate": 0.927,
+        "false_negative_rate": 0.07599999999999996,
+        "advantage": -0.0030000000000000027,
+        "threshold": 0.3040550649166107,
+        "held_out_queries": 2000,
+        "roc_auc": 0.4953165
+      },
+      "performance": {
+        "seconds": 0.4454,
+        "cpu_seconds": 0.4399,
+        "mean_process_cpu_percent": 98.76,
+        "rss_start_bytes": 455376896,
+        "rss_end_bytes": 457195520
+      }
+    },
+    {
+      "model": "DP-SGD target 8",
+      "epsilon_target": 8.0,
+      "epsilon_spent": 7.993031063831686,
+      "delta": 1e-05,
+      "noise_multiplier": 0.76812744140625,
+      "utility": {
+        "accuracy": 0.8415,
+        "precision": 0.9165085388994307,
+        "recall": 0.6388888888888888,
+        "false_positive_rate": 0.03536977491961415,
+        "false_negative_rate": 0.36111111111111116,
+        "advantage": 0.6035191139692747,
+        "f1": 0.7529228371005456,
+        "roc_auc": 0.9403719865938516
+      },
+      "membership": {
+        "accuracy": 0.499,
+        "precision": 0.4994600431965443,
+        "recall": 0.925,
+        "false_positive_rate": 0.927,
+        "false_negative_rate": 0.07499999999999996,
+        "advantage": -0.0020000000000000018,
+        "threshold": 0.30048230290412903,
+        "held_out_queries": 2000,
+        "roc_auc": 0.495332
+      },
+      "performance": {
+        "seconds": 0.5852,
+        "cpu_seconds": 0.5887,
+        "mean_process_cpu_percent": 100.6,
+        "rss_start_bytes": 457326592,
+        "rss_end_bytes": 448757760
+      }
+    }
+  ],
+  "linkage": [
+    {
+      "protection": "direct identifiers",
+      "targets": 2000,
+      "known_targets": 1000,
+      "attempted_links": 1000,
+      "correct_links": 1000,
+      "success_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "advantage": 1.0
+    },
+    {
+      "protection": "masked identifiers",
+      "targets": 2000,
+      "known_targets": 1000,
+      "attempted_links": 969,
+      "correct_links": 788,
+      "success_rate": 0.394,
+      "precision": 0.8132094943240454,
+      "recall": 0.788,
+      "accuracy": 0.8035,
+      "advantage": 0.607
+    },
+    {
+      "protection": "HMAC identifiers",
+      "targets": 2000,
+      "known_targets": 1000,
+      "attempted_links": 969,
+      "correct_links": 788,
+      "success_rate": 0.394,
+      "precision": 0.8132094943240454,
+      "recall": 0.788,
+      "accuracy": 0.8035,
+      "advantage": 0.607
+    },
+    {
+      "protection": "masking with generalized quasi-identifiers",
+      "targets": 2000,
+      "known_targets": 1000,
+      "attempted_links": 0,
+      "correct_links": 0,
+      "success_rate": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.5,
+      "advantage": 0.0
+    }
+  ],
+  "data_transforms": [
+    {
+      "mechanism": "mask",
+      "rows": 10000,
+      "model_inputs_preserved": true,
+      "performance": {
+        "seconds": 0.0115,
+        "cpu_seconds": 0.0084,
+        "mean_process_cpu_percent": 73.44,
+        "rss_start_bytes": 418627584,
+        "rss_end_bytes": 419266560
+      }
+    },
+    {
+      "mechanism": "hmac",
+      "rows": 10000,
+      "model_inputs_preserved": true,
+      "performance": {
+        "seconds": 0.0542,
+        "cpu_seconds": 0.0539,
+        "mean_process_cpu_percent": 99.58,
+        "rss_start_bytes": 420478976,
+        "rss_end_bytes": 422445056
+      }
+    }
+  ]
+}
